@@ -1,0 +1,345 @@
+[
+ {
+  "codigoSessaoVotacao": 900001,
+  "sequencialVotacao": 1,
+  "dataSessao": "2026-09-15T15:30:00",
+  "descricaoVotacao": "Votação do Projeto de Lei nº 1087, de 2025 (substitutivo)",
+  "votacaoSecreta": "N",
+  "resultadoVotacao": "A",
+  "codigoMateria": 170001,
+  "sigla": "PL",
+  "numero": "1087",
+  "ano": 2025,
+  "ementa": "Altera a legislação do imposto de renda para tributar lucros e dividendos e os juros sobre capital próprio.",
+  "totalVotosSim": null,
+  "totalVotosNao": null,
+  "totalVotosAbstencao": null,
+  "votos": [
+   {
+    "codigoParlamentar": 5000,
+    "nomeParlamentar": "Senador 0",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "SP",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5001,
+    "nomeParlamentar": "Senador 1",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "RJ",
+    "siglaVotoParlamentar": "P-NRV"
+   },
+   {
+    "codigoParlamentar": 5002,
+    "nomeParlamentar": "Senador 2",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5003,
+    "nomeParlamentar": "Senador 3",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "PE",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5004,
+    "nomeParlamentar": "Senador 4",
+    "siglaPartidoParlamentar": "MDB",
+    "siglaUFParlamentar": "AM",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5005,
+    "nomeParlamentar": "Senador 5",
+    "siglaPartidoParlamentar": "PSD",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5006,
+    "nomeParlamentar": "Senador 6",
+    "siglaPartidoParlamentar": "PP",
+    "siglaUFParlamentar": "MS",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5007,
+    "nomeParlamentar": "Senador 7",
+    "siglaPartidoParlamentar": "UNIÃO",
+    "siglaUFParlamentar": "AP",
+    "siglaVotoParlamentar": "Presidente (art. 51 RISF)"
+   },
+   {
+    "codigoParlamentar": 5008,
+    "nomeParlamentar": "Senador 8",
+    "siglaPartidoParlamentar": "NOVO",
+    "siglaUFParlamentar": "RS",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5009,
+    "nomeParlamentar": "Senador 9",
+    "siglaPartidoParlamentar": "PSB",
+    "siglaUFParlamentar": "CE",
+    "siglaVotoParlamentar": "Sim"
+   }
+  ]
+ },
+ {
+  "codigoSessaoVotacao": 900002,
+  "sequencialVotacao": 2,
+  "dataSessao": "2026-09-15T16:10:00",
+  "descricaoVotacao": "Destaque para votação em separado da Emenda nº 3 ao PL 1087/2025",
+  "votacaoSecreta": "N",
+  "resultadoVotacao": "R",
+  "codigoMateria": 170001,
+  "sigla": "PL",
+  "numero": "1087",
+  "ano": 2025,
+  "ementa": null,
+  "votos": [
+   {
+    "codigoParlamentar": 5000,
+    "nomeParlamentar": "Senador 0",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "SP",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5001,
+    "nomeParlamentar": "Senador 1",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "RJ",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5002,
+    "nomeParlamentar": "Senador 2",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5003,
+    "nomeParlamentar": "Senador 3",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "PE",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5004,
+    "nomeParlamentar": "Senador 4",
+    "siglaPartidoParlamentar": "MDB",
+    "siglaUFParlamentar": "AM",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5005,
+    "nomeParlamentar": "Senador 5",
+    "siglaPartidoParlamentar": "PSD",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5006,
+    "nomeParlamentar": "Senador 6",
+    "siglaPartidoParlamentar": "PP",
+    "siglaUFParlamentar": "MS",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5007,
+    "nomeParlamentar": "Senador 7",
+    "siglaPartidoParlamentar": "UNIÃO",
+    "siglaUFParlamentar": "AP",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5008,
+    "nomeParlamentar": "Senador 8",
+    "siglaPartidoParlamentar": "NOVO",
+    "siglaUFParlamentar": "RS",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5009,
+    "nomeParlamentar": "Senador 9",
+    "siglaPartidoParlamentar": "PSB",
+    "siglaUFParlamentar": "CE",
+    "siglaVotoParlamentar": "Não"
+   }
+  ]
+ },
+ {
+  "codigoSessaoVotacao": 900003,
+  "sequencialVotacao": 1,
+  "dataSessao": "2026-10-01T14:00:00",
+  "descricaoVotacao": "Proposta de Emenda à Constituição nº 8, de 2026 - primeiro turno",
+  "votacaoSecreta": "N",
+  "resultadoVotacao": "A",
+  "codigoMateria": 170050,
+  "sigla": "PEC",
+  "numero": "8",
+  "ano": 2026,
+  "ementa": "Reduz a jornada de trabalho e extingue a escala 6x1.",
+  "votos": [
+   {
+    "codigoParlamentar": 5000,
+    "nomeParlamentar": "Senador 0",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "SP",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5001,
+    "nomeParlamentar": "Senador 1",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "RJ",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5002,
+    "nomeParlamentar": "Senador 2",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5003,
+    "nomeParlamentar": "Senador 3",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "PE",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5004,
+    "nomeParlamentar": "Senador 4",
+    "siglaPartidoParlamentar": "MDB",
+    "siglaUFParlamentar": "AM",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5005,
+    "nomeParlamentar": "Senador 5",
+    "siglaPartidoParlamentar": "PSD",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Sim"
+   },
+   {
+    "codigoParlamentar": 5006,
+    "nomeParlamentar": "Senador 6",
+    "siglaPartidoParlamentar": "PP",
+    "siglaUFParlamentar": "MS",
+    "siglaVotoParlamentar": "AP"
+   },
+   {
+    "codigoParlamentar": 5007,
+    "nomeParlamentar": "Senador 7",
+    "siglaPartidoParlamentar": "UNIÃO",
+    "siglaUFParlamentar": "AP",
+    "siglaVotoParlamentar": "Presidente (art. 51 RISF)"
+   },
+   {
+    "codigoParlamentar": 5008,
+    "nomeParlamentar": "Senador 8",
+    "siglaPartidoParlamentar": "NOVO",
+    "siglaUFParlamentar": "RS",
+    "siglaVotoParlamentar": "Não"
+   },
+   {
+    "codigoParlamentar": 5009,
+    "nomeParlamentar": "Senador 9",
+    "siglaPartidoParlamentar": "PSB",
+    "siglaUFParlamentar": "CE",
+    "siglaVotoParlamentar": "Sim"
+   }
+  ]
+ },
+ {
+  "codigoSessaoVotacao": 900004,
+  "sequencialVotacao": 1,
+  "dataSessao": "2026-10-02T14:00:00",
+  "descricaoVotacao": "Mensagem nº 40, de 2026 - indicação de diretor da ANEEL",
+  "votacaoSecreta": "S",
+  "resultadoVotacao": "A",
+  "codigoMateria": 170060,
+  "sigla": "MSF",
+  "numero": "40",
+  "ano": 2026,
+  "ementa": "Submete à apreciação do Senado a indicação para diretor da Agência Nacional de Energia Elétrica - ANEEL.",
+  "votos": [
+   {
+    "codigoParlamentar": 5000,
+    "nomeParlamentar": "Senador 0",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "SP",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5001,
+    "nomeParlamentar": "Senador 1",
+    "siglaPartidoParlamentar": "PL",
+    "siglaUFParlamentar": "RJ",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5002,
+    "nomeParlamentar": "Senador 2",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5003,
+    "nomeParlamentar": "Senador 3",
+    "siglaPartidoParlamentar": "PT",
+    "siglaUFParlamentar": "PE",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5004,
+    "nomeParlamentar": "Senador 4",
+    "siglaPartidoParlamentar": "MDB",
+    "siglaUFParlamentar": "AM",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5005,
+    "nomeParlamentar": "Senador 5",
+    "siglaPartidoParlamentar": "PSD",
+    "siglaUFParlamentar": "BA",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5006,
+    "nomeParlamentar": "Senador 6",
+    "siglaPartidoParlamentar": "PP",
+    "siglaUFParlamentar": "MS",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5007,
+    "nomeParlamentar": "Senador 7",
+    "siglaPartidoParlamentar": "UNIÃO",
+    "siglaUFParlamentar": "AP",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5008,
+    "nomeParlamentar": "Senador 8",
+    "siglaPartidoParlamentar": "NOVO",
+    "siglaUFParlamentar": "RS",
+    "siglaVotoParlamentar": "Votou"
+   },
+   {
+    "codigoParlamentar": 5009,
+    "nomeParlamentar": "Senador 9",
+    "siglaPartidoParlamentar": "PSB",
+    "siglaUFParlamentar": "CE",
+    "siglaVotoParlamentar": "Votou"
+   }
+  ]
+ }
+]

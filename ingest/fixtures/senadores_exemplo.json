@@ -1,0 +1,89 @@
+{
+ "ListaParlamentarEmExercicio": {
+  "Parlamentares": {
+   "Parlamentar": [
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5000",
+      "NomeParlamentar": "Senador 0",
+      "SiglaPartidoParlamentar": "PL",
+      "UfParlamentar": "SP",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5000.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5001",
+      "NomeParlamentar": "Senador 1",
+      "SiglaPartidoParlamentar": "PL",
+      "UfParlamentar": "RJ",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5001.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5002",
+      "NomeParlamentar": "Senador 2",
+      "SiglaPartidoParlamentar": "PT",
+      "UfParlamentar": "BA",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5002.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5003",
+      "NomeParlamentar": "Senador 3",
+      "SiglaPartidoParlamentar": "PT",
+      "UfParlamentar": "PE",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5003.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5004",
+      "NomeParlamentar": "Senador 4",
+      "SiglaPartidoParlamentar": "MDB",
+      "UfParlamentar": "AM",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5004.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5005",
+      "NomeParlamentar": "Senador 5",
+      "SiglaPartidoParlamentar": "PSD",
+      "UfParlamentar": "BA",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5005.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5006",
+      "NomeParlamentar": "Senador 6",
+      "SiglaPartidoParlamentar": "PP",
+      "UfParlamentar": "MS",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5006.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5007",
+      "NomeParlamentar": "Senador 7",
+      "SiglaPartidoParlamentar": "UNIÃO",
+      "UfParlamentar": "AP",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5007.jpg"
+     }
+    },
+    {
+     "IdentificacaoParlamentar": {
+      "CodigoParlamentar": "5008",
+      "NomeParlamentar": "Senador 8",
+      "SiglaPartidoParlamentar": "NOVO",
+      "UfParlamentar": "RS",
+      "UrlFotoParlamentar": "http://www.senado.leg.br/senadores/img/fotos-oficiais/senador5008.jpg"
+     }
+    }
+   ]
+  }
+ }
+}
