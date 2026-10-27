@@ -15,7 +15,9 @@ Requer a variável DATABASE_URL (string de conexão Postgres do Supabase, papel 
 Fonte: API de Dados Abertos do Senado.
   - /dadosabertos/votacao?dataInicio=AAAA-MM-DD&dataFim=AAAA-MM-DD
       resposta = array na raiz; cada votação traz votos[] embutidos.
-      totalVotosSim/Nao/Abstencao vêm null: o placar é recontado a partir de votos[].
+      totalVotosSim/Nao/Abstencao às vezes vêm null (visto em votação aberta); quando null,
+      o placar é recontado a partir de votos[]. descricaoVotacao é um texto padrão
+      ("Votação nominal do Projeto ... nº X"); o assunto real está em ementa.
   - /dadosabertos/senador/lista/atual
 O endpoint legado /plenario/lista/votacao foi desativado em 01/02/2026; não use.
 """
@@ -90,8 +92,10 @@ REGRAS_TIPO = [
 ]
 
 
-def tipo_votacao(descricao: str | None, sigla_materia: str | None) -> str:
-    n = normalizar(descricao)
+def tipo_votacao(descricao: str | None, ementa: str | None, sigla_materia: str | None) -> str:
+    # descricaoVotacao na API atual é um texto padrão ("Votação nominal do Projeto ... nº X, de AAAA");
+    # o assunto real (autoridade, destaque, requerimento) só aparece na ementa. Classificamos sobre os dois.
+    n = f"{normalizar(descricao)} {normalizar(ementa)}".strip()
     for tipo, padrao in REGRAS_TIPO:
         if padrao.search(n):
             return tipo
@@ -260,7 +264,7 @@ def ingerir_votacoes(con: psycopg.Connection, registros: list[dict]) -> tuple[in
                     str(reg.get("resultadoVotacao") or "") or None,
                     secreta,
                     materia,
-                    tipo_votacao(reg.get("descricaoVotacao"), reg.get("sigla")),
+                    tipo_votacao(reg.get("descricaoVotacao"), reg.get("ementa"), reg.get("sigla")),
                     reg.get("totalVotosSim") if reg.get("totalVotosSim") is not None else cats.count("SIM"),
                     reg.get("totalVotosNao") if reg.get("totalVotosNao") is not None else cats.count("NAO"),
                     reg.get("totalVotosAbstencao") if reg.get("totalVotosAbstencao") is not None else cats.count("ABST"),

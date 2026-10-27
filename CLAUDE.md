@@ -21,18 +21,21 @@ Usos previstos: insumo interno de risco político para a Ciano Investimentos, co
 
 ## API do Senado: armadilhas conhecidas
 - O endpoint legado `/plenario/lista/votacao` foi desativado em 01/02/2026. O atual é `GET https://legis.senado.leg.br/dadosabertos/votacao?dataInicio=AAAA-MM-DD&dataFim=AAAA-MM-DD`, que devolve um array na raiz com `votos[]` embutido.
-- `totalVotosSim/Nao/Abstencao` vêm null, por isso o placar é recontado a partir de `votos[]`.
-- `siglaVotoParlamentar` não é um enum limpo: Sim, Não, Abstenção, AP, P-NRV, MIS, LS, LAP, LP, "Presidente (art. 51 RISF)" e "Votou" (em votação secreta).
+- `totalVotosSim/Nao/Abstencao` às vezes vêm null (visto em votação aberta); quando null, o placar é recontado a partir de `votos[]`. Em votação secreta a API traz o agregado preenchido, mas mascara o voto individual.
+- `descricaoVotacao` é um texto padrão ("Votação nominal do Projeto ... nº X, de AAAA"), sem o assunto. A natureza real (autoridade, mérito, etc.) está na `ementa` — por isso `tipo_votacao()` classifica sobre descrição + ementa, não só a descrição.
+- `siglaVotoParlamentar` não é um enum limpo: Sim, Não, Abstenção, AP, P-NRV, MIS, LS, LAP, LP, "Presidente (art. 51 RISF)" e "Votou" (em votação secreta). Confirmados na amostra real: Sim, AP, P-NRV, "Presidente (art. 51 RISF)", "Votou".
+- Cada voto também traz `descricaoVotoParlamentar` (pode vir null) e `nomeParlamentar`/`sexoParlamentar`.
 - Rate limit com 429/503: o script faz 1 req/s com backoff exponencial.
-- Votação secreta (Mesa, sabatinas, autoridades) não tem voto individual. Votação simbólica não aparece na API.
+- Votação secreta (Mesa, sabatinas, autoridades) traz os votos individuais com `siglaVotoParlamentar="Votou"` (sabe-se que votou, não como). Votação simbólica não aparece na API.
 
 ## Estado atual (27/10/2026)
 - Schema, seed e ingestão foram testados ponta a ponta num Postgres local com o fixture SINTÉTICO de `ingest/fixtures/`. Os nomes de campo vieram de projetos abertos que já usam a API (votosdosenado, politicapp).
-- **NUNCA RODOU CONTRA A API REAL**: o ambiente onde o código foi escrito não tinha acesso de rede ao senado.leg.br.
+- **Validado contra a API real em 27/10/2026** (janela set/2026, endpoint `/dadosabertos/votacao`): todos os nomes de campo esperados pelo código conferem com a resposta real. Amostra real salva em `ingest/fixtures/votacoes_set2026_real.json` (2 votações). A ingestão completa ainda não rodou contra um banco real (falta `DATABASE_URL`).
+- Divergência encontrada e corrigida: `descricaoVotacao` é boilerplate sem o assunto; `tipo_votacao()` agora classifica sobre descrição + `ementa` (antes só a descrição classificava a PDL que escolhe Ministro do TCU como `merito` em vez de `autoridade`).
 
 ## Próximos passos
-1. Rodar `python ingest/ingest.py votacoes --inicio 2026-09-01 --fim 2026-09-30` contra a API real e comparar campos e formatos com o que o código espera (`codigoSessaoVotacao`, `dataSessao`, `votacaoSecreta`, `codigoMateria`, `sigla`, `numero`, `ano`, `ementa`, `votos[].codigoParlamentar`, `siglaPartidoParlamentar`, `siglaUFParlamentar`, `siglaVotoParlamentar`).
-2. Conferir as descrições reais de votação e ajustar `REGRAS_TIPO` em `ingest.py`.
+1. ✅ Rodado contra a API real (set/2026): campos conferidos, divergência da classificação corrigida e amostra real salva em `ingest/fixtures/`. Falta rodar a ingestão completa contra um banco (precisa de `DATABASE_URL`) e a carga histórica (passo 4).
+2. Conferir mais descrições/ementas reais (destaque, requerimento) e ajustar `REGRAS_TIPO` em `ingest.py` — set/2026 só teve 2 votações (1 autoridade secreta, 1 mérito), sem amostra de destaque/requerimento.
 3. Salvar uma amostra real em `ingest/fixtures/` e escrever testes com pytest em cima dela.
 4. Fazer a carga histórica desde 2023-02-01 e revisar falsos positivos da classificação por palavra-chave.
 5. Montar o front: página por senador, página por setor/ticker e um "placar provável" de matérias em tramitação.
